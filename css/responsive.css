@@ -1,0 +1,145 @@
+@media only screen and (min-width: 768px) {
+    h1.section-titre {
+        font-size: 6rem;
+    }
+    /* intro size__________________________________ */
+    #intro h1 {
+        font-size: 7rem;
+    }
+    /* A propos size_____________________________ */
+    #Apropos .Apropos {
+        flex-direction: row;
+    }
+    #Apropos .colonne-gauche {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #Apropos .Apropos .colonne-gauche .Apropos-img::after {
+        left: -45px;
+        top: 34px;
+        height: 100%;
+        width: 100%;
+        border: 10px solid rgb(56, 44, 81);
+    }
+    #Apropos .colonne-droite {
+        text-align: left;
+        padding: 30px;
+    }
+    #Apropos .colonne-droite h1 {
+        text-align: left;
+    }
+
+
+
+        /* Mes Projet _____________________________________ */
+    #projet .projet-item {
+        flex-direction: row;
+    }
+    #projet .projet-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #projet .projet-item {
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projet .all-projet .projet-info {
+        height: 100%;
+    }
+    #projet .all-projet .projet-img {
+        height: 100%;
+    }
+    /* contact ___________________________________________ */
+    #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+    #contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #contact .contact-item1 {
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+    #contact .contact-item1 .icon {
+        height: 100px;
+        width: 100px;
+    }
+    #contact .contact-item1 .icon img {
+        object-fit: contain;
+    }
+    #contact .contact-item1 .contact-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+
+    #contact .contact-item2 {
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+    #contact .contact-item2 .icon {
+        height: 100px;
+        width: 100px;
+    }
+    #contact .contact-item2 .icon img {
+        object-fit: contain;
+    }
+    #contact .contact-item2 .contact-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #contact .contact-item3 {
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+    #contact .contact-item3 .icon {
+        height: 100px;
+        width: 100px;
+    }
+    #contact .contact-item3 .icon img {
+        object-fit: contain;
+    }
+    #contact .contact-item3 .contact-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+}
+
+@media only screen {
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul li {
+        display: inline-block;
+    }
+    #header .nav-list ul li a {
+        font-size: 1.8rem;
+    }
+    #Apropos .Apropos-bottom .Apropos-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+
+
+}

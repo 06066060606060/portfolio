@@ -1,0 +1,105 @@
+#contact .contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+  /* background-color: coral; */
+}
+
+#contact .contact-items {
+  width: 100%;
+}
+
+#contact .contact-item1 {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact .contact-item1:hover {
+  box-shadow: 0px 0px 15px 15px #8a6fa369;
+}
+#contact .contact-item2:hover {
+  box-shadow: 0px 0px 15px 15px #8a6fa369;
+}
+#contact .contact-item3:hover {
+  box-shadow: 0px 0px 15px 15px #8a6fa369;
+}
+
+#contact .contact-item2 {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact .contact-item3 {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .contact-item1:hover .fa-twitter {
+    animation: bounce 1s alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  .contact-item2:hover .fa-envelope {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  .contact-item3:hover .fa-phone {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+}

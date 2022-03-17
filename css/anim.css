@@ -1,0 +1,77 @@
+@media (prefers-reduced-motion: no-preference) {
+ 
+  .apropos {
+    animation: 2s wipe-enter2 ease-out 1;
+  }
+
+  .projet-header{
+    animation: 1s wipe-enter ease-out 1;
+    animation-duration: 2s;
+  }
+
+  .figure h1{
+    animation: 1s wipe-enter ease-out 1;
+    animation-duration: 2s;
+  }
+
+  .contact h1 {
+    animation: 1s wipe-enter ease-out 1;
+    animation-duration: 2s;
+    margin-bottom: 200px;
+    
+  }
+
+  .Description {
+    animation: 1s wipe-enter ease-out 1;
+    animation-duration: 4s;
+  }
+
+
+  /* .test-transition {
+    transform: none;
+    animation-name: fade;
+    animation-duration: 3.5s;
+  } */
+
+
+  @keyframes wipe-enter {
+   0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes wipe-enter2 {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    1% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+}
