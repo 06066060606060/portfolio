@@ -18,8 +18,9 @@
 
 </head>
 
+
 <body id="canvas" onload="myFunction()">
-    <canvas></canvas> 
+    <canvas></canvas>
     <section id="header">
         <div class="header container">
             <div class="nav-bar">
@@ -43,10 +44,19 @@
                 <h1> Mickael <span></span></h1>
                 <h3>je suis peut-être ton futur développeur web</h3>
             </Intro>
+            <control>
+                <i>Animation Control:</i>
+                <range><input type="range" id="myRange" step="1" value="200" min="10" max="500"
+                    onchange="myFunction('true'), updateTextInput(this.value);" required</><sub>Nombres de Points:</sub><input type="text" id="textInput" disabled="disabled" value="200">
+                </range>
+                <range2><input type="range" id="myRange2" step="1" value="20" min="1" max="200"
+                    onchange="myFunction('true'), updateTextInput2(this.value);" required</><sub>Longeur des liaisons:</sub><input type="text" id="textInput2" disabled="disabled" value="20">
+                </range2>
+            </control>
             <span><a href="#Apropos" onmouseover="click();">
                     <p class="fa-solid fa-chevron-down fa-2x"></p>
-                </a></span>
-
+                </a>
+            </span>
         </div>
     </section>
 
@@ -93,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <span></span>
+
         </div>
     </section>
 
@@ -109,9 +119,8 @@
                     <div class="projet-info">
                         <h1>Minage de Bitcoin</h1>
                         <h2>Gestion d'une ferme de minage</h2>
-                        <p>Analyse de la sécurité, Exploitation de vulnérabilité pour créer un custom firmware. Analyse
-                            hardware
-                            & Reverse engineering d'Asic de minage.
+                        <p>Analyse de la sécurité, Exploitation de vulnérabilité pour créer un custom firmware.
+                            Analyse hardware & Reverse engineering d'Asic de minage. WhatsMiner, Antminer,goldshell
                         </p>
                     </div>
                     <div class="projet-img">
@@ -129,18 +138,21 @@
                             <a href="https://youtu.be/Hx_5rB4_eHQ">Trailer Video 2016 </a>
                         </p>
                     </div>
+                    <div id="projet1"></div>
+
                     <div class="projet-img">
                         <img src="https://06066060606060.github.io/Projet/img/1.png" alt="img">
                     </div>
                 </div>
+               
                 <div class="projet-item">
                     <div class="projet-info">
                         <h1>App C++ esp32</h1>
                         <h2>Arduin IDE Esp32 </h2>
-                        <p>Création d'application sur esp32.
+                        <p>Création d'application pour esp32.
                             Bitcoin ticker, Altimétre numerique.
                             Voiture télécommandé en Bluetooth.
-                            Controleur led matrix.
+                            Controleur de led Rgb.
                         </p>
                     </div>
                     <div class="projet-img">
@@ -151,9 +163,9 @@
                     <div class="projet-info">
                         <h1>Développement Mobile</h1>
                         <h2>XDA Developers Senior Recognized Developer</h2>
-                        <p>Test de sécurité pour Nokia Finland.
+                        <p>Test de sécurité du Nokia Lumia 800 pour Nokia Finland.(2011)
                             Participation au portage de Windows Phone 7 sur HTC HD2,
-                            Recherche de vulnérabilité, creation de firmwares. 
+                            Recherche de vulnérabilité, creation de firmwares.
                             Windows 10 arm64.
                             <a href="https://forum.xda-developers.com/m/xboxmod.489538/">Profil XDA</a>
                         </p>
@@ -162,6 +174,7 @@
                         <img src="https://06066060606060.github.io/Projet/img/2.png" alt="img">
                     </div>
                 </div>
+                <div id="projet2"></div>
                 <div class="projet-item">
                     <div class="projet-info">
                         <h1>Hack XboxOne</h1>
@@ -182,14 +195,15 @@
                             Scripts Python, bash, Cpp, ASM, Ghidra, IDA Pro, ILSpy, Burpsuite
                             <a href="https://www.root-me.org/Xmicky?">Profil RootMe</a>
                         </p>
-                        <img class="rootme" src="https://06066060606060.github.io/Projet/img/rootme.png"</img>
+                        <img class="rootme" src="https://06066060606060.github.io/Projet/img/rootme.png" </img>
                     </div>
                     <div class="projet-img">
-                  <img src="https://06066060606060.github.io/Projet/img/6.png" alt="img">
+                        <img src="https://06066060606060.github.io/Projet/img/6.png" alt="img">
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <section id="figure">
         <div class="figure container">
@@ -207,7 +221,10 @@
                 </div>
 
             </div>
-            <span></span>
+            <span><a href="#contact" onmouseover="click();">
+                <p class="fa-solid fa-chevron-down fa-2x"></p>
+            </a>
+        </span>
         </div>
 
     </section>
@@ -235,10 +252,10 @@
                     </div>
                 </div>
                 <div class="contact-item3">
-                    <i class="fa-solid fa-phone fa-5x"></i>
+                    <i class="fa-brands fa-github fa-5x"></i>
                     <div class="contact-info">
-                        <h1>Télephone</h1>
-                        <h2><a href="tel:0601020304">0601020304</a></h2>
+                        <h1>Github Repo</h1>
+                        <h2><a href="https://github.com/06066060606060/Projet">https://github.com/</a></h2>
                     </div>
                 </div>
             </div>
@@ -253,8 +270,9 @@
             </p>
         </div>
     </section>
-    <script src='https://06066060606060.github.io/Projet/js/anim.js' defer></script>
-    <script src='https://06066060606060.github.io/Projet/js/app.js'></script>
+    <script src="https://06066060606060.github.io/Projet/js/anim.js" defer></script>
+    <script src="https://06066060606060.github.io/Projet/js/app.js"></script>
+
     <div id="bottom"></div>
 </body>
 
