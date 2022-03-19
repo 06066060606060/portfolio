@@ -1,11 +1,21 @@
+var conditionToStopFunction = false;
+
 function myFunction() {
+    console.log(conditionToStopFunction);
+    if (conditionToStopFunction)
+    return; 
+   
+    var slider1 = document.getElementById("myRange");
+    var slider2 = document.getElementById("myRange2");
     var canvas = document.querySelector('canvas'),
-        ctx = canvas.getContext('2d')
+     ctx = canvas.getContext('2d')
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     ctx.lineWidth = .3;
     ctx.strokeStyle = (new Color(150)).style;
-
+    
+    console.log("dot "+slider1.value);
+    console.log("distance "+slider2.value);
     var mousePosition = {
         x: 30 * canvas.width / 100,
         y: 30 * canvas.height / 100
@@ -13,8 +23,9 @@ function myFunction() {
 
     var dots = {
 
-        nb: 200, //nombre de points
-        distance: 20, //distance max avant disparition du traits
+       
+        nb: slider1.value,//nombre de points
+        distance: slider2.value, //distance max avant disparition du traits
         d_radius: 1200, //diametre max du nuage de traits
         array: []
 
@@ -25,7 +36,7 @@ function myFunction() {
     }
 
     function createColorStyle(r, g, b) {
-        return 'rgba(' + r + ',' + g + ',' + b + ', 1)';
+        return 'rgba(' + r + ',' + g + ',' + b + ', 0.5)';
     }
 
     function mixComponents(comp1, weight1, comp2, weight2) {

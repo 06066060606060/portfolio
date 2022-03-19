@@ -12,7 +12,7 @@ projet.classList.remove('projet-header');
 photo.classList.remove('section-titre');
 contactx.classList.remove('contact-items');
 
-// Create the observer, same as before:
+// INTERCEPTE A PROPOS
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -32,7 +32,7 @@ const observer = new IntersectionObserver(entries => {
 });
 observer.observe(document.querySelector('.apropos-wrapper'));
 
-
+// INTERCEPTE PROJET
 const observer2 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -47,6 +47,7 @@ const observer2 = new IntersectionObserver(entries => {
 });
 observer2.observe(document.querySelector('.projet-wrapper'));
 
+// INTERCEPTE PHOTOS
 const observer3 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -61,7 +62,7 @@ const observer3 = new IntersectionObserver(entries => {
 });
 observer3.observe(document.querySelector('.figure'));
 
-
+// INTERCEPTE CONTACT
 const observer4 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -75,3 +76,7 @@ const observer4 = new IntersectionObserver(entries => {
   });
 });
 observer4.observe(document.querySelector('.contact'));
+
+
+
+

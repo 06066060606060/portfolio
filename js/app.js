@@ -1,8 +1,8 @@
 var slideIndex = 0;
 showSlides();
-
 window.onresize = myFunction;
 
+//slideshow photo
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -18,23 +18,33 @@ function showSlides() {
   setTimeout(showSlides, 3000); // 4 secondes
 }
 
-function play() {
-  var audio = new Audio("/js/clic.wav");
-  audio.play();
-  // console.log("play sound");
+function updateTextInput(val) {
+  document.getElementById('textInput').value=val; 
+  console.log("ok value1");
+}
+function updateTextInput2(val) {
+  document.getElementById('textInput2').value=val; 
+  console.log("ok value2");
 }
 
-
+var xcontrol = document.querySelector('control');
+var xslide = document.querySelector('range');
+var xslide2 = document.querySelector('range2');
 
 document.addEventListener("scroll", () => {
   var scroll_position = window.scrollY;
-  if (scroll_position > 878) {
-    header.style.backgroundColor = "#41306b";
-   // document.body.style.background = "#41406b";
-   // console.log("OKI JE SUIS LA111111111111");
-  } else {
+  if (scroll_position < 60) {
     header.style.backgroundColor = "transparent";
-  //  document.body.style.background = "#000000";
-  //  console.log("OKI JE PAS LA222222222222222");
+    xcontrol.style.display = "";
+    xslide.style.display = "";
+    xslide2.style.display = "";
+
+  } else 
+  {
+    header.style.backgroundColor = "#41306b";
+    xslide.style.display = "none";
+    xslide2.style.display = "none";
+    xcontrol.style.display = "none";
+   // console.log("ok scroll capté");
   }
 });
