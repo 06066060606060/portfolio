@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/intro.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/projet.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/anim.css">
+    <link rel="stylesheet" href="/css/photos.css">
+    <script src="/js/background.js"></script>
+    <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
+    <title>Mon portfolio</title>
+
+</head>
+
+<body id="canvas" onload="myFunction()">
+    <canvas></canvas>
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="#intro">Accueil</a></li>
+                        <li><a href="#Apropos">A propos</a></li>
+                        <li><a href="#projet">projets</a></li>
+                        <li><a href="#figure">Photos</a></li>
+                        <li><a href="#bottom">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="intro">
+        <div class="intro container">
+            <Intro>
+                <h1>Bonjour, </h1>
+                <h1>je m'appelle </h1>
+                <h1> Mickael <span></span></h1>
+                <h3>je suis peut-être ton futur développeur web</h3>
+            </Intro>
+            <control>
+                <i>Animation Control:</i>
+                <range><input type="range" id="myRange" step="1" value="200" min="10" max="500"
+                    onchange="myFunction('true'), updateTextInput(this.value);" required</><sub>Nombres de Points:</sub><input type="text" id="textInput" disabled="disabled" value="200">
+                </range>
+                <range2><input type="range" id="myRange2" step="1" value="20" min="5" max="200"
+                    onchange="myFunction('true'), updateTextInput2(this.value);" required</><sub>Longeur des liaisons:</sub><input type="text" id="textInput2" disabled="disabled" value="20">
+                </range2>
+            </control>
+            <span><a href="#Apropos" onmouseover="click();">
+                    <p class="fa-solid fa-chevron-down fa-2x"></p>
+                </a>
+            </span>
+        </div>
+    </section>
+
+
+    <section id="Apropos">
+        <div class="Apropos container">
+            <div class="colonne-gauche">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="/img/me4.png" alt="img">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/me3.png" alt="img">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/me2.png" alt="img">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/me1.png" alt="img">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/me5.png" alt="img">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/me6.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="colonne-droite">
+                <div class="apropos-wrapper">
+                    <div class="apropos">
+                        <h1 class="section-titre">A propos de moi</h1>
+                        <h2>Ipsum dolor sit amet</h2>
+                    </div>
+                    <div class="Description">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non
+                            illum
+                            beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore
+                            necessitatibus deserunt exercitationem cumque earum
+                            omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita
+                            sint ad
+                            dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+                            reprehenderit libero enim!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projet">
+        <div class="projet container">
+            <div class="projet-wrapper">
+                <div class="projet-header">
+                    <h1 class="section-titre">Mes Anciens Projets</h1>
+                </div>
+            </div>
+            <div class="all-projet">
+                <div class="projet-item">
+                    <div class="projet-info">
+                        <h1>Minage de Bitcoin</h1>
+                        <h2>Gestion d'une ferme de minage</h2>
+                        <p>Analyse de la sécurité, Exploitation de vulnérabilité pour créer un custom firmware.
+                            Analyse hardware & Reverse engineering d'Asic de minage. WhatsMiner, Antminer,goldshell
+                        </p>
+                    </div>
+                    <div class="projet-img">
+                        <img src="./img/3.png" alt="img">
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <div class="projet-info">
+                        <h1>Jeux C# Unity</h1>
+                        <h2>Jet-Wings</h2>
+                        <p>Pour le fun et pour découvrir le développement en C# sous Unity, j'ai développé avec mon pot
+                            Dexll un jeu de sports aériens inspiré par Jetman. Cela
+                            ma permit de me familiariser avec la modelisation
+                            3D et la motion capture.
+                            <a href="https://youtu.be/Hx_5rB4_eHQ">Trailer Video 2016 </a>
+                        </p>
+                    </div>
+                    <div id="projet1"></div>
+
+                    <div class="projet-img">
+                        <img src="./img/1.png" alt="img">
+                    </div>
+                </div>
+               
+                <div class="projet-item">
+                    <div class="projet-info">
+                        <h1>App C++ esp32</h1>
+                        <h2>Arduin IDE Esp32 </h2>
+                        <p>Création d'application pour esp32.
+                            Bitcoin ticker, Altimétre numerique.
+                            Voiture télécommandé en Bluetooth.
+                            Controleur de led Rgb.
+                        </p>
+                    </div>
+                    <div class="projet-img">
+                        <img src="./img/5.png" alt="img">
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <div class="projet-info">
+                        <h1>Développement Mobile</h1>
+                        <h2>XDA Developers Senior Recognized Developer</h2>
+                        <p>Test de sécurité du Nokia Lumia 800 pour Nokia Finland.(2011)
+                            Participation au portage de Windows Phone 7 sur HTC HD2,
+                            Recherche de vulnérabilité, creation de firmwares.
+                            Windows 10 arm64.
+                            <a href="https://forum.xda-developers.com/m/xboxmod.489538/">Profil XDA</a>
+                        </p>
+                    </div>
+                    <div class="projet-img">
+                        <img src="./img/2.png" alt="img">
+                    </div>
+                </div>
+                <div id="projet2"></div>
+                <div class="projet-item">
+                    <div class="projet-info">
+                        <h1>Hack XboxOne</h1>
+                        <h2>Recherche de Vulnérabilités</h2>
+                        <p>Participation à l'analyse de la sécurité mise en place sur XboxOne, Analyse
+                            hardware, dump de la nand, exploitation de failles, exploits... </p>
+                    </div>
+                    <div class="projet-img">
+                        <img src="./img/4.png" alt="img">
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <div class="projet-info">
+                        <h1>Hack Divers</h1>
+                        <h2>Recherche et exploitation de Vulnérabilités</h2>
+                        <p>Intrusion et exploitation serveur Apache Tomcat. JAVA RCE deserialization
+                            Reverse engineering, decompilation, Application patch, crack...
+                            Scripts Python, bash, Cpp, ASM, Ghidra, IDA Pro, ILSpy, Burpsuite
+                            <a href="https://www.root-me.org/Xmicky?">Profil RootMe</a>
+                        </p>
+                        <img class="rootme" src="/img/rootme.png" </img>
+                    </div>
+                    <div class="projet-img">
+                        <img src="./img/6.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="figure">
+        <div class="figure container">
+            <div>
+                <h1 class="section-titre">Photos</h1>
+            </div>
+            <div class="figure-items">
+                <div class="contener_slideshow">
+                    <div class="contener_slide">
+                        <div class="slid_1"><img src="/img/01.jpg"></div>
+                        <div class="slid_2"><img src="/img/02.jpg"></div>
+                        <div class="slid_3"><img src="/img/03.jpg"></div>
+                        <div class="slid_4"><img src="/img/04.jpg"></div>
+                    </div>
+                </div>
+
+            </div>
+            <span><a href="#bottom" onmouseover="click();">
+                <p class="fa-solid fa-chevron-down fa-2x"></p>
+            </a>
+        </span>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-titre">Contactez-moi</h1>
+            </div>
+            <div class="contact-items">
+
+                <div class="contact-item1">
+                    <i class="fa-brands fa-twitter fa-5x"></i>
+                    <div class="contact-info">
+                        <h1>Twitter</h1>
+                        <h2>
+                            <a href="https://www.twitter.com/xmicky">@Xmicky</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="contact-item2">
+                    <i class="fa-solid fa-envelope fa-5x"></i>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2><a href="mailto: mail@hotmail.fr">Mail@hotmail.fr</a></h2>
+                    </div>
+                </div>
+                <div class="contact-item3">
+                    <i class="fa-brands fa-github fa-5x"></i>
+                    <div class="contact-info">
+                        <h1>Github Repo</h1>
+                        <h2><a href="https://github.com/06066060606060/Projet">https://github.com/</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer container">
+            <p> <i class="fa-brands fa-microsoft fa-2x"></i> &nbsp; <i class="fa-brands fa-linux fa-2x"></i>
+            <h3><strong> &nbsp; Copyright © 2022 X</strong>₿<strong>mod &nbsp; </strong></h3>
+
+            </p>
+            <ontop><a href="#intro" onmouseover="click();"><i class="fa-solid fa-chevron-up fa-4x"></i></a></ontop>
+        </div>
+    </section>
+    <script src="/js/anim.js" defer></script>
+    <script src="/js/app.js"></script>
+
+    <div id="bottom"></div>
+</body>
+
+</html>
