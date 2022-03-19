@@ -1,9 +1,9 @@
 #intro {
   background-image: url(https://06066060606060.github.io/Projet/img/aaa.jpg);
   background-size: cover;
-
   background-position: top center;
   z-index: 1;
+ 
 }
 
 #intro::after {
@@ -25,16 +25,17 @@
   justify-content: flex-start;
 }
 
-#intro .intro span p{
+#intro .intro span p {
   position: absolute;
   z-index: 90;
+  left: 50%;
+  top: 90%;
   color: transparent;
   border-radius: 100%;
   animation: fleche_bounce 0.8s alternate;
   -webkit-animation: fleche_bounce 0.8s infinite alternate;
-  margin-left: 160px;
-  margin-top: 400px;
-  }
+  
+}
 
 #intro h1 {
   display: block;
@@ -44,6 +45,7 @@
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
+  z-index: 80;
 }
 
 #intro h1:nth-child(1) {
@@ -91,8 +93,153 @@
   color: transparent;
   animation: text_reveal 5s ease forwards;
   animation-delay: 4s;
+  z-index: 80;
+}
+/* CONTROL DE L ANIMATION */
+
+control {
+  z-index: 100;
+  position: absolute;
+  width: 17rem;
+  height: 3rem;
+  top: 14%;
+  left: 5%;
+  background-color: rgba(134, 135, 135, 0.123);
+  border-radius: 8px;
 }
 
+control:hover {
+  position: absolute;
+  width: 17rem;
+  height: 15rem;
+  top: 14%;
+  left: 5%;
+  background-color: rgba(134, 135, 135, 0.116);
+  border-radius: 8px;
+
+}
+
+control i {
+  font-size: 12px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.432);
+  padding-left: 35px;
+  padding-top: 7px;
+  text-shadow: 2px 3px 3px #000000;
+}
+
+control:hover i {
+  font-size: 14px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.796);
+  padding-left: 25px;
+  padding-top: 7px;
+  text-shadow: 2px 3px 3px #000000;
+  animation-timing-function: ease;
+
+}
+
+control #textInput {
+  visibility: hidden;
+}
+
+control:hover #textInput {
+
+  visibility: visible;
+  margin-top: 12px;
+  padding-left: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  position:absolute;
+ 
+}
+
+control:hover sub{
+  position:relative;
+  top: 10px;
+  font-size: 12px;
+  
+  
+}
+
+control #textInput2 {
+  visibility: hidden;
+}
+
+control:hover #textInput2 {
+  visibility: visible;
+  margin-top: 12px;
+  padding-left: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  position:absolute;
+
+}
+
+control range {
+  visibility: hidden;
+}
+
+control:hover range {
+  visibility: visible;
+  position: absolute;
+  left: 10%;
+  margin-top: 45px;
+  color: aliceblue;
+
+}
+
+control range2 {
+  visibility: hidden;
+}
+
+control:hover range2 {
+  visibility: visible;
+  position: absolute;
+  left: 10%;
+  margin-top: 95px;
+  color: aliceblue;
+
+}
+
+
+
+
+
+/* SLIDER COLOR */
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 140px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-color: rgb(65, 48, 107);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: rgb(253, 252, 255);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+/* ANIMATION TEXTE INTRO */
 @keyframes text_reveal_box {
   50% {
     width: 100%;
