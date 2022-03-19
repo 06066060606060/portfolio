@@ -1,7 +1,14 @@
 var conditionToStopFunction = false;
 
 function myFunction() {
-    console.log(conditionToStopFunction);
+    console.log(`%c ________________________________________
+< _______BIENVENUE DANS LA CONSOLE______ >
+ ----------------------------------------
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
+                ||----w |
+                ||     ||`, "font-family:monospace");
     if (conditionToStopFunction)
     return; 
    
