@@ -37,14 +37,23 @@
   width:850px;
   height:450px;
 }
-.slid_1{left: 0;
- padding: 10px;}
-.slid_2{left: 850px;
- padding: 10px;}
-.slid_3{left: 1700px;
- padding: 10px;}
-.slid_4{left: 2550px;
- padding: 10px;}
+.slid_1{
+  left: 0;
+  padding: 10px;
+}
+.slid_2
+{
+  left: 850px;
+  padding: 10px;
+}
+.slid_3{
+  left: 1700px;
+  padding: 10px;
+}
+.slid_4{
+  left: 2550px;
+  padding: 10px;
+}
 
 .contener_slide
 {

@@ -30,8 +30,8 @@ function updateTextInput(val) {
                   ||----w |
                   ||     ||`, "font-family:monospace");
   console.log("Nombre de points: " + val);
-}
 
+}
 function updateTextInput2(val) {
   document.getElementById('textInput2').value=val; 
   console.clear();
@@ -44,6 +44,7 @@ function updateTextInput2(val) {
                   ||----w |
                   ||     ||`, "font-family:monospace");
   console.log("Taille max des lignes: "+ val);
+  
 }
 
 var xcontrol = document.querySelector('control');
