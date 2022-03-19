@@ -20,11 +20,30 @@ function showSlides() {
 
 function updateTextInput(val) {
   document.getElementById('textInput').value=val; 
-  console.log("ok value1");
+  console.clear();
+  console.log(`%c ________________________________________
+  < _______BIENVENUE DANS LA CONSOLE______ >
+   ----------------------------------------
+          \\   ^__^
+           \\  (oo)\\_______
+              (__)\\       )\\/\\
+                  ||----w |
+                  ||     ||`, "font-family:monospace");
+  console.log("Nombre de points: " + val);
 }
+
 function updateTextInput2(val) {
   document.getElementById('textInput2').value=val; 
-  console.log("ok value2");
+  console.clear();
+  console.log(`%c ________________________________________
+  < _______BIENVENUE DANS LA CONSOLE______ >
+   ----------------------------------------
+          \\   ^__^
+           \\  (oo)\\_______
+              (__)\\       )\\/\\
+                  ||----w |
+                  ||     ||`, "font-family:monospace");
+  console.log("Taille max des lignes: "+ val);
 }
 
 var xcontrol = document.querySelector('control');
