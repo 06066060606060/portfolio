@@ -12,16 +12,16 @@
   margin-top: 0px;
   margin-bottom: 75px;
 }
-
-#figure .figure span{
-position: absolute;
-width: 500px;
-height: 10px;
-background-color: rgb(56, 44, 81);
-border-color: white;
-border-radius: 8px;
-margin-top: 1000px;
-} 
+#figure .figure span p {
+  position: absolute;
+  z-index: 90;
+  left: 50%;
+  top: 580%;
+  color: transparent;
+  border-radius: 100%;
+  animation: fleche_bounce 0.8s alternate;
+  -webkit-animation: fleche_bounce 0.8s infinite alternate;
+}
 
 .contener_slideshow
 {

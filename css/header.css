@@ -11,10 +11,7 @@
     min-height: 8vh;
     background-color: rgba(42, 33, 56, 0.705);
     transition: 0.3s ease background-color;
-}
-
-#header .nav-bar {
- 
+  
 }
 
 #header .nav-list ul {
@@ -42,6 +39,7 @@
     color: white;
     text-transform: uppercase;
     padding: 15px;
+    font-weight: 800;
     display: block;
 }
 
@@ -58,6 +56,6 @@
     transition: 0.3s ease letter-spacing;
 }
 
-#header .nav-list ul li:hover a {
+#header .header ul li:hover a {
     color: rgb(94, 14, 233);
 }

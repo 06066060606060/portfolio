@@ -98,7 +98,7 @@
     animation: bounce 1s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
   }
-  .contact-item3:hover .fa-phone {
+  .contact-item3:hover .fa-github {
     animation: bounce 1s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
   }
