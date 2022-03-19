@@ -131,10 +131,10 @@ control i {
 }
 
 control:hover i {
-  font-size: 14px;
+  font-size: 12px;
   position: absolute;
   color: rgba(255, 255, 255, 0.796);
-  padding-left: 25px;
+  padding-left: 35px;
   padding-top: 7px;
   text-shadow: 2px 3px 3px #000000;
 }
@@ -227,6 +227,17 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: none;
   background: transparent;
 }
+
+
+/* BITCOIN BAR */
+
+coingecko-coin-price-marquee-widget{
+  position: absolute;
+  max-width: 200px;
+  top:8%;
+  left: 80%;
+}
+
 
 /* ANIMATION TEXTE INTRO */
 @keyframes text_reveal_box {

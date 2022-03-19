@@ -1,3 +1,5 @@
+
+/* Tablette */
 @media only screen and (min-width: 768px) {
     h1.section-titre {
         font-size: 6rem;
@@ -6,6 +8,8 @@
     #intro h1 {
         font-size: 7rem;
     }
+
+
     /* A propos size_____________________________ */
     #Apropos .Apropos {
         flex-direction: row;
@@ -29,9 +33,6 @@
     #Apropos .colonne-droite h1 {
         text-align: left;
     }
-
-
-
         /* Mes Projet _____________________________________ */
     #projet .projet-item {
         flex-direction: row;
@@ -141,6 +142,48 @@
         margin: 1.5%;
     }
 
- 
-
 }
+
+@media only screen and (max-width: 600px) {
+    
+    /* intro size__________________________________ */
+    #intro h1 {
+        font-size: 2rem;
+    }
+    #intro h1 span p{
+        font-size: 2rem;
+    }
+    #intro h3 {
+        font-size: 1rem;
+    }
+
+    coingecko-coin-price-marquee-widget{
+        visibility: hidden;
+        width: 0px;
+        top:-10%;
+        left:-10%;
+      }
+
+      control {
+        z-index: 100;
+        position: absolute;
+        width: 17rem;
+        height: 3rem;
+        top: 18%;
+        left: 50%;
+        background-color: rgba(134, 135, 135, 0.123);
+        border-radius: 8px;
+      }
+
+      control:hover {
+        position: absolute;
+        width: 17rem;
+        height: 15rem;
+        top: 18%;
+        left: 50%;
+        background-color: rgba(134, 135, 135, 0.528);
+        border-radius: 8px;
+        animation-timing-function: ease-out;
+      }
+
+  }
