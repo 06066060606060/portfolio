@@ -70,6 +70,7 @@
     -webkit-animation-duration: 3.5s;
     animation-name: fade;
     animation-duration: 3.5s;
+    animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes fade {

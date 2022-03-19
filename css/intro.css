@@ -1,5 +1,5 @@
 #intro {
-  background-image: url(https://06066060606060.github.io/Projet/img/aaa.jpg);
+  background-image: url(/img/aaa.jpg);
   background-size: cover;
   background-position: top center;
   z-index: 1;
@@ -114,8 +114,9 @@ control:hover {
   height: 15rem;
   top: 14%;
   left: 5%;
-  background-color: rgba(134, 135, 135, 0.116);
+  background-color: rgba(134, 135, 135, 0.528);
   border-radius: 8px;
+  animation-timing-function: ease-out ;
 
 }
 
@@ -135,7 +136,7 @@ control:hover i {
   padding-left: 25px;
   padding-top: 7px;
   text-shadow: 2px 3px 3px #000000;
-  animation-timing-function: ease;
+
 
 }
 

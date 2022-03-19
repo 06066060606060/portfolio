@@ -60,6 +60,7 @@
   animation-duration: 10s;
   animation-iteration-count:infinite;
   animation-name: anim_slide;
+  animation-timing-function: ease;
 }
 @-webkit-keyframes anim_slide 
 {
