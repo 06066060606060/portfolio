@@ -104,3 +104,8 @@
   height: auto;
   padding-top: 10px;
 }
+
+#projet li{
+  font-size: 1.2rem;
+  margin-top: 5px;
+}

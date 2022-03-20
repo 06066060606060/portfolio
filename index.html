@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/intro.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/projet.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/anim.css">
-    <script src="/js/background.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/projet.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/anim.css">
+    <script src="./js/background.js"></script>
+    <script src="./js/btc.js"></script>
     <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
-    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
     <title>Mon portfolio</title>
 
 </head>
 
-<body id="canvas" onload="myFunction()">
+<body id="canvas" onload="myFunction(), bitcoinP()">
     <canvas></canvas>
     <section id="header">
         <div class="header container">
@@ -27,13 +27,15 @@
                 <div class="nav-list">
                     <ul>
                         <li><a href="#intro" onmouseover="click();">Accueil</a></li>
-                        <li><a href="#Apropos" onmouseover="click();">A propos</a></li>
+                        <li><a href="#Apropos" onmouseover="click();">About</a></li>
                         <li><a href="#projet" onmouseover="click();">projets</a></li>
                         <li><a href="#bottom" onmouseover="click();">Contact</a></li>
                     </ul>
                 </div>
             </div>
+            <btc><a>BITCOIN</a><input type="text" id="textInputB" disabled="disabled" value=""></btc>
         </div>
+    
     </section>
     <section id="intro">
         <div class="intro container">
@@ -45,7 +47,7 @@
             </Intro>
             <control>
                 <i>Animation Control:</i>
-                <range><input type="range" id="myRange" step="1" value="200" min="10" max="500"
+                <range><input type="range" id="myRange" step="1" value="200" min="10" max="600"
                         onchange="myFunction('true'), updateTextInput(this.value);" required< /><sub>Nombre de
                         Points:</sub><input type="text" id="textInput" disabled="disabled" value="200">
                 </range>
@@ -59,9 +61,7 @@
                 </a>
             </span>
         </div>
-        <coingecko-coin-price-marquee-widget coin-ids="bitcoin" currency="usd"
-        background-color="" locale="en" font-color="white">
-    </coingecko-coin-price-marquee-widget>
+
     </section>
 
 
@@ -70,22 +70,22 @@
             <div class="colonne-gauche">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img src="/img/me4.png" alt="img">
+                        <img src="./img/me4.png" alt="img">
                     </div>
                     <div class="mySlides fade">
-                        <img src="/img/me3.png" alt="img">
+                        <img src="./img/me3.png" alt="img">
                     </div>
                     <div class="mySlides fade">
-                        <img src="/img/me2.png" alt="img">
+                        <img src="./img/me2.png" alt="img">
                     </div>
                     <div class="mySlides fade">
-                        <img src="/img/me1.png" alt="img">
+                        <img src="./img/me1.png" alt="img">
                     </div>
                     <div class="mySlides fade">
-                        <img src="/img/me5.png" alt="img">
+                        <img src="./img/me5.png" alt="img">
                     </div>
                     <div class="mySlides fade">
-                        <img src="/img/me6.png" alt="img">
+                        <img src="./img/me6.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -126,9 +126,15 @@
                     <div class="projet-info">
                         <h1>₿itcoin </h1>
                         <h2>Gestion d'une ferme de minage</h2>
-                        <p>Analyse de la sécurité, Exploitation de vulnérabilité pour créer un custom firmware.
-                            Analyse hardware & Reverse engineering d'Asic de minage. WhatsMiner, Antminer, GoldShell
+                        <p>-Reverse engineering de machine de minage. 
+                        <br>-Analyse de la sécurité et Analyse hardware.
+                        <br>-Exploitation de vulnérabilité pour créer un custom firmware.   
                         </p>
+                            <link>
+                            <a href="https://shop.bitmain.com/release/AntminerS19XP/overview" style="color:teal" target="_blank"><li>Bitmain</li></a>
+                            <a href="https://www.whatsminer.com/mall/BTmall.html" style="color:teal" target="_blank"><li>WhatsMiner</li></a>
+                            <a href="https://www.goldshell.com/shop/" style="color:teal" target="_blank"><li>GoldShell</li></a>     
+                        </link>             
                     </div>
                     <div class="projet-img">
                         <img src="./img/3.png" alt="image mine de bitcoin">
@@ -138,11 +144,12 @@
                     <div class="projet-info">
                         <h1>Jeux C# Unity</h1>
                         <h2>Jet-Wings</h2>
-                        <p>Pour le fun et pour découvrir le développement en C# sous Unity, j'ai développé avec mon pot
+                        <p>Pour le fun et pour découvrir le développement en C# sous Unity,
+                            <br>j'ai développé avec mon pot
                             Dexll un jeu de sports aériens inspiré par Jetman. Cela
                             ma permit de me familiariser avec la modelisation
                             3D et la motion capture.
-                            <a href="https://youtu.be/Hx_5rB4_eHQ" style="color:teal" target="_blank">Trailer 2016 </a>
+                            <a href="https://youtu.be/Hx_5rB4_eHQ" style="color:teal" target="_blank"><li>Trailer 2016</li> </a>
                         </p>
                     </div>
                     <div id="projet1"></div>
@@ -157,9 +164,10 @@
                         <h1>App C++</h1>
                         <h2>Création d'application pour esp32.</h2>
                         <p>
-                            Bitcoin ticker, Altimétre numérique.
-                            UART Debugger. Controlleur imprimante 3D.
-                            Controlleur led Rgb.
+                            -Bitcoin ticker
+                            <br>-Altimétre numérique.
+                            <br>-UART Debugger.<br>.Controlleur imprimante 3D.
+                            <br>-Controlleur led Rgb.
                         </p>
                     </div>
                     <div class="projet-img">
@@ -170,12 +178,11 @@
                     <div class="projet-info">
                         <h1>Développement Mobile</h1>
                         <h2>XDA Developers Senior Recognized Developer</h2>
-                        <p>Test de sécurité du Nokia Lumia 800 pour Nokia Finland.(2011)
-                            Participation au portage de Windows Phone 7 sur HTC HD2,
-                            Recherche de vulnérabilité, creation de firmwares.
-                            Windows 10 arm64.
-                            <a href="https://forum.xda-developers.com/m/xboxmod.489538/" style="color:teal"
-                                target="_blank">Profil XDA</a>
+                        <p>-Test de sécurité du Nokia Lumia 800 pour Nokia Finland.(2011)
+                            <br>-Participation au portage de Windows Phone 7 sur HTC HD2,
+                            <br>-Recherche de vulnérabilité, creation de firmwares.
+                            <br>-Portage de l'Interface HTC Manilla en lua.
+                            <a href="https://forum.xda-developers.com/m/xboxmod.489538/" style="color:teal" target="_blank"><li>Profil XDA</li></a>
                         </p>
                     </div>
                     <div class="projet-img">
@@ -187,9 +194,9 @@
                     <div class="projet-info">
                         <h1>Hack XboxOne</h1>
                         <h2>Recherche de Vulnérabilités</h2>
-                        <p>Participation à l'analyse de la sécurité mise en place sur XboxOne, Analyse
-                            hardware, dump de la nand, exploitation de failles, exploits...
-                            <a href="https://xosft.dev/wiki/" style="color:teal" target="_blank">xosft.dev</a>
+                        <p>-Participation à l'analyse de la sécurité mise en place sur XboxOne.<br>-Analyse
+                            hardware<br>-Dump de la nand<br>-Exploits...
+                            <a href="https://xosft.dev/wiki/" style="color:teal" target="_blank"><li>xosft.dev</li></a>
 
                         </p>
                     </div>
@@ -201,13 +208,14 @@
                     <div class="projet-info">
                         <h1>Hack Divers</h1>
                         <h2>Recherche et exploitation de Vulnérabilités</h2>
-                        <p>Intrusion et exploitation serveur Apache Tomcat. JAVA RCE deserialization
-                            Reverse engineering, decompilation, Application patch, crack...
-                            Scripts Python, bash, Cpp, ASM, Ghidra, IDA Pro, ILSpy, Burpsuite
-                            <a href="https://www.root-me.org/Xmicky?" style="color:teal" target="_blank">Profil
-                                RootMe</a>
+                        <p>-Intrusion et exploitation serveur Apache Tomcat. JAVA RCE deserialization
+                            <br>-Reverse engineering,<br> -decompilation,<br> -Application patch, crack...
+                            <br>-Scripts: Python, bash, Cpp, ASM.
+                            <br>-Ghidra, IDA Pro, ILSpy, Burpsuite.
+                            <a href="https://www.root-me.org/Xmicky?" style="color:teal" target="_blank"><li>Profil
+                                RootMe</li></a>
                         </p>
-                        <img class="rootme" src="/img/rootme.png" </img>
+                        <img class="rootme" src="./img/rootme.png" </img>
                     </div>
                     <div class="projet-img">
                         <img src="./img/6.png" alt="image ghidra">
@@ -262,8 +270,8 @@
             <ontop><a href="#intro" onmouseover="click();"><i class="fa-solid fa-chevron-up fa-4x"></i></a></ontop>
         </div>
     </section>
-    <script src="/js/anim.js" defer></script>
-    <script src="/js/app.js"></script>
+    <script src="./js/anim.js" defer></script>
+    <script src="./js/app.js"></script>
 
     <div id="bottom"></div>
 </body>

@@ -1,61 +1,85 @@
 #header {
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: auto;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
 }
 
 #header .header {
-    min-height: 8vh;
-    background-color: rgba(42, 33, 56, 0.705);
-    transition: 0.3s ease background-color;
-  
+  min-height: 8vh;
+  background-color: rgba(42, 33, 56, 0.705);
+  transition: 0.3s ease background-color;
 }
 
 #header .nav-list ul {
-    list-style: none;
-    position: absolute;
-    background-color: rgb(31, 30, 30);
-    width: 100vw;
-    height: 100vh;
-    left: 100%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 0.5s ease left;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(31, 30, 30);
+  width: 100vw;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s ease left;
 }
 
 #header .nav-list ul a {
-    font-size: 2.5rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 15px;
-    font-weight: 800;
-    display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: 800;
+  display: block;
+}
+
+btc {
+  background-image: url(../img/Bitcoin.svg.png);
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 85%;
+  
+}
+
+btc a{
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+
+btc #textInputB{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(175, 0, 0);
+    border: none;
+    margin-left: 42px;
+    margin-top: 5px ;
 }
 
 #header .nav-list ul a::after {
-    content: attr(data-after);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: rgba(240, 248, 255, 0.021);
-    font-size: 13rem;
-    letter-spacing: 50px;
-    z-index: -1;
-    transition: 0.3s ease letter-spacing;
+  content: attr(data-after);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: rgba(240, 248, 255, 0.021);
+  font-size: 13rem;
+  letter-spacing: 50px;
+  z-index: -1;
+  transition: 0.3s ease letter-spacing;
 }
 
 #header .header ul li:hover a {
-    color: rgb(94, 14, 233);
+  color: rgb(94, 14, 233);
 }
+
+/* BITCOIN BAR */

@@ -1,7 +1,7 @@
 /* TEXTE INTRO */
 
 #intro {
-  background-image: url(/img/aaa.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: top center;
   z-index: 1;
@@ -228,15 +228,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: transparent;
 }
 
-
-/* BITCOIN BAR */
-
-coingecko-coin-price-marquee-widget{
-  position: absolute;
-  max-width: 200px;
-  top:8%;
-  left: 80%;
-}
 
 
 /* ANIMATION TEXTE INTRO */

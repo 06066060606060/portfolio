@@ -12,13 +12,6 @@
 
   }
 
-  .figure h1{
-    animation: wipe-enter 1500ms ease-out 1;
-    animation-duration: 1500ms;
-
-    
-  }
-
   .contact h1 {
     animation: wipe-enter  1500ms  ease-out 1;
     animation-duration: 1500ms;

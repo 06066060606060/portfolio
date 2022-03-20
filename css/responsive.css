@@ -144,7 +144,11 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+
+
+/*  MODE MOBILE */
+
+@media only screen and (max-width: 768px) {
     
     /* intro size__________________________________ */
     #intro h1 {
@@ -157,13 +161,7 @@
         font-size: 1rem;
     }
 
-    coingecko-coin-price-marquee-widget{
-        visibility: hidden;
-        width: 0px;
-        top:-10%;
-        left:-10%;
-      }
-
+  
       control {
         z-index: 100;
         position: absolute;

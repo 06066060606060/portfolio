@@ -49,11 +49,6 @@ function updateTextInput2(val) {
   
 }
 
-// function myPopup() {
-//   var popup = document.getElementById("myPopup");
-//   popup.classList.toggle("show");
-// }
-
 
 //listener pour le scroll
 
