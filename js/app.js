@@ -1,6 +1,6 @@
 var slideIndex = 0;
 showSlides();
-window.onresize = myFunction;
+window.onresize = myFunction;  //restart anim au resize
 
 //slideshow photo
 function showSlides() {
@@ -18,6 +18,8 @@ function showSlides() {
   setTimeout(showSlides, 3000); // 4 secondes
 }
 
+//Retour valeur slider
+
 function updateTextInput(val) {
   document.getElementById('textInput').value=val; 
   console.clear();
@@ -30,8 +32,8 @@ function updateTextInput(val) {
                   ||----w |
                   ||     ||`, "font-family:monospace");
   console.log("Nombre de points: " + val);
-}
 
+}
 function updateTextInput2(val) {
   document.getElementById('textInput2').value=val; 
   console.clear();
@@ -44,7 +46,11 @@ function updateTextInput2(val) {
                   ||----w |
                   ||     ||`, "font-family:monospace");
   console.log("Taille max des lignes: "+ val);
+  
 }
+
+
+//listener pour le scroll
 
 var xcontrol = document.querySelector('control');
 var xslide = document.querySelector('range');

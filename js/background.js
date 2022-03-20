@@ -1,6 +1,7 @@
 var conditionToStopFunction = false;
 
 function myFunction() {
+    //console.log(conditionToStopFunction);
     console.log(`%c ________________________________________
 < _______BIENVENUE DANS LA CONSOLE______ >
  ----------------------------------------
@@ -21,8 +22,8 @@ function myFunction() {
     ctx.lineWidth = .3;
     ctx.strokeStyle = (new Color(150)).style;
     
-    console.log("dot "+slider1.value);
-    console.log("distance "+slider2.value);
+   // console.log("dot "+slider1.value);
+  //  console.log("distance "+slider2.value);
     var mousePosition = {
         x: 30 * canvas.width / 100,
         y: 30 * canvas.height / 100

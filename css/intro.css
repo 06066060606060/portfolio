@@ -1,9 +1,10 @@
+/* TEXTE INTRO */
+
 #intro {
-  background-image: url(https://06066060606060.github.io/Projet/img/aaa.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: top center;
   z-index: 1;
- 
 }
 
 #intro::after {
@@ -34,7 +35,6 @@
   border-radius: 100%;
   animation: fleche_bounce 0.8s alternate;
   -webkit-animation: fleche_bounce 0.8s infinite alternate;
-  
 }
 
 #intro h1 {
@@ -59,6 +59,7 @@
 #intro h1:nth-child(3) {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
+  font-size: 8rem;
 }
 
 #intro h1 span {
@@ -67,7 +68,7 @@
   left: 0;
   height: 100%;
   width: 0;
-  background-color: rgb(56, 44, 81);
+  background-color: rgb(45, 35, 65);
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -95,6 +96,7 @@
   animation-delay: 4s;
   z-index: 80;
 }
+
 /* CONTROL DE L ANIMATION */
 
 control {
@@ -116,8 +118,7 @@ control:hover {
   left: 5%;
   background-color: rgba(134, 135, 135, 0.528);
   border-radius: 8px;
-  animation-timing-function: ease-out ;
-
+  animation-timing-function: ease-out;
 }
 
 control i {
@@ -130,14 +131,12 @@ control i {
 }
 
 control:hover i {
-  font-size: 14px;
+  font-size: 12px;
   position: absolute;
   color: rgba(255, 255, 255, 0.796);
-  padding-left: 25px;
+  padding-left: 35px;
   padding-top: 7px;
   text-shadow: 2px 3px 3px #000000;
-
-
 }
 
 control #textInput {
@@ -145,23 +144,19 @@ control #textInput {
 }
 
 control:hover #textInput {
-
   visibility: visible;
   margin-top: 12px;
   padding-left: 5px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   color: aliceblue;
-  position:absolute;
- 
+  position: absolute;
 }
 
-control:hover sub{
-  position:relative;
+control:hover sub {
+  position: relative;
   top: 10px;
   font-size: 12px;
-  
-  
 }
 
 control #textInput2 {
@@ -175,8 +170,7 @@ control:hover #textInput2 {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   color: aliceblue;
-  position:absolute;
-
+  position: absolute;
 }
 
 control range {
@@ -189,7 +183,6 @@ control:hover range {
   left: 10%;
   margin-top: 45px;
   color: aliceblue;
-
 }
 
 control range2 {
@@ -202,12 +195,7 @@ control:hover range2 {
   left: 10%;
   margin-top: 95px;
   color: aliceblue;
-
 }
-
-
-
-
 
 /* SLIDER COLOR */
 input[type="range"] {
@@ -239,6 +227,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: none;
   background: transparent;
 }
+
+
 
 /* ANIMATION TEXTE INTRO */
 @keyframes text_reveal_box {
