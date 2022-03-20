@@ -1,6 +1,5 @@
 //BITCOIN PRICE
-let url = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDC";
-var tab = [];
+var url = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDC";
 
 function bitcoinP() {
   fetch(url)

@@ -1,0 +1,51 @@
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+  
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(55, 54, 54, 0.857);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    left: 10%;
+    margin-left: -250px;
+
+  }
+
+ #myPopup {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    padding-top: 178px;
+    background-image: url(/img/code.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+  }
+
+  .popup .show { 
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

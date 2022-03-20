@@ -59,7 +59,7 @@ btc a{
 
 btc #textInputB{
     background-color: rgba(0, 0, 0, 0);
-    color: chartreuse;
+    color: rgb(255, 255, 255);
     border: none;
     margin-left: 42px;
     margin-top: 5px ;
@@ -82,4 +82,3 @@ btc #textInputB{
   color: rgb(94, 14, 233);
 }
 
-/* BITCOIN BAR */

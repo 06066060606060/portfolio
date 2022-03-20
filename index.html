@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/anim.css">
+    <link rel="stylesheet" href="./css/popup.css">
     <script src="./js/background.js"></script>
     <script src="./js/btc.js"></script>
     <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
@@ -32,9 +33,14 @@
                     </ul>
                 </div>
             </div>
-            <btc><a>BITCOIN</a><input type="text" id="textInputB" disabled="disabled" value=""></btc>
+            <btc onmouseover="myPopup()">
+                <div class="popup" >
+                    <a>BITCOIN</a><input type="text" id="textInputB" disabled="disabled" value="">
+                    <span class="popuptext" id="myPopup">Comment c'est fait:</span>
+                </div>
+            </btc>
         </div>
-    
+
     </section>
     <section id="intro">
         <div class="intro container">
@@ -103,9 +109,6 @@
                             reprehenderit libero enim!</p>
                     </div>
                 </div>
-                <!-- <div class="popup" onclick="myPopup()" style="color: aliceblue;";">Click me!
-                    <span class="popuptext" id="myPopup">Popup text...</span>
-                </div>  Test Popup -->
             </div>
 
         </div>
@@ -123,15 +126,22 @@
                     <div class="projet-info">
                         <h1>₿itcoin </h1>
                         <h2>Gestion d'une ferme de minage</h2>
-                        <p>-Reverse engineering de machine de minage. 
-                        <br>-Analyse de la sécurité et Analyse hardware.
-                        <br>-Exploitation de vulnérabilité pour créer un custom firmware.   
+                        <p>-Reverse engineering de machine de minage.
+                            <br>-Analyse de la sécurité et Analyse hardware.
+                            <br>-Exploitation de vulnérabilité pour créer un custom firmware.
                         </p>
-                            <link>
-                            <a href="https://shop.bitmain.com/release/AntminerS19XP/overview" style="color:teal" target="_blank"><li>Bitmain</li></a>
-                            <a href="https://www.whatsminer.com/mall/BTmall.html" style="color:teal" target="_blank"><li>WhatsMiner</li></a>
-                            <a href="https://www.goldshell.com/shop/" style="color:teal" target="_blank"><li>GoldShell</li></a>     
-                        </link>             
+                        <link>
+                        <a href="https://shop.bitmain.com/release/AntminerS19XP/overview" style="color:teal"
+                            target="_blank">
+                            <li>Bitmain</li>
+                        </a>
+                        <a href="https://www.whatsminer.com/mall/BTmall.html" style="color:teal" target="_blank">
+                            <li>WhatsMiner</li>
+                        </a>
+                        <a href="https://www.goldshell.com/shop/" style="color:teal" target="_blank">
+                            <li>GoldShell</li>
+                        </a>
+                        </link>
                     </div>
                     <div class="projet-img">
                         <img src="./img/3.png" alt="image mine de bitcoin">
@@ -146,7 +156,9 @@
                             Dexll un jeu de sports aériens inspiré par Jetman. Cela
                             ma permit de me familiariser avec la modelisation
                             3D et la motion capture.
-                            <a href="https://youtu.be/Hx_5rB4_eHQ" style="color:teal" target="_blank"><li>Trailer 2016</li> </a>
+                            <a href="https://youtu.be/Hx_5rB4_eHQ" style="color:teal" target="_blank">
+                                <li>Trailer 2016</li>
+                            </a>
                         </p>
                     </div>
                     <div id="projet1"></div>
@@ -179,7 +191,10 @@
                             <br>-Participation au portage de Windows Phone 7 sur HTC HD2,
                             <br>-Recherche de vulnérabilité, creation de firmwares.
                             <br>-Portage de l'Interface HTC Manilla en lua.
-                            <a href="https://forum.xda-developers.com/m/xboxmod.489538/" style="color:teal" target="_blank"><li>Profil XDA</li></a>
+                            <a href="https://forum.xda-developers.com/m/xboxmod.489538/" style="color:teal"
+                                target="_blank">
+                                <li>Profil XDA</li>
+                            </a>
                         </p>
                     </div>
                     <div class="projet-img">
@@ -193,7 +208,9 @@
                         <h2>Recherche de Vulnérabilités</h2>
                         <p>-Participation à l'analyse de la sécurité mise en place sur XboxOne.<br>-Analyse
                             hardware<br>-Dump de la nand<br>-Exploits...
-                            <a href="https://xosft.dev/wiki/" style="color:teal" target="_blank"><li>xosft.dev</li></a>
+                            <a href="https://xosft.dev/wiki/" style="color:teal" target="_blank">
+                                <li>xosft.dev</li>
+                            </a>
 
                         </p>
                     </div>
@@ -209,8 +226,10 @@
                             <br>-Reverse engineering,<br> -decompilation,<br> -Application patch, crack...
                             <br>-Scripts: Python, bash, Cpp, ASM.
                             <br>-Ghidra, IDA Pro, ILSpy, Burpsuite.
-                            <a href="https://www.root-me.org/Xmicky?" style="color:teal" target="_blank"><li>Profil
-                                RootMe</li></a>
+                            <a href="https://www.root-me.org/Xmicky?" style="color:teal" target="_blank">
+                                <li>Profil
+                                    RootMe</li>
+                            </a>
                         </p>
                         <img class="rootme" src="./img/rootme.png" </img>
                     </div>
