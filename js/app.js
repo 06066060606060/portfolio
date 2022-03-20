@@ -45,7 +45,7 @@ function updateTextInput2(val) {
               (__)\\       )\\/\\
                   ||----w |
                   ||     ||`, "font-family:monospace");
-  console.log("Taille max des lignes: "+ val);
+  //console.log("Taille max des lignes: "+ val);
   
 }
 

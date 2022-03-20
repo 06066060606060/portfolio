@@ -1,27 +1,17 @@
 //BITCOIN PRICE
 let url = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDC";
-var out = 0;
+var tab = [];
 
 function bitcoinP() {
-  console.log("ok btc json");
-
   fetch(url)
     .then((res) => res.json())
     .then((out) => {
-     
-      console.table(out);
-      console.log();
-      var output = out[0,1];
-      document.getElementById('textInputB').value=output;
-    
-  
-    })
-    .catch((err) => {
-      throw err;
+      //console.table(out);
+      const text = JSON.stringify(out);
+      const obj = JSON.parse(text);
+      obj.price = eval("{" + obj.price + "}");
+      var output = Math.trunc(obj.price);
+      document.getElementById("textInputB").value = output + " $";
+ 
     });
-}
-
-function updateTextInputB(val) {
-    document.getElementById('textInputB').value=val; 
-    
   }

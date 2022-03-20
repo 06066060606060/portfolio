@@ -53,13 +53,13 @@ btc {
 
 btc a{
     color: rgb(255, 255, 255);
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 
 btc #textInputB{
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(175, 0, 0);
+    color: chartreuse;
     border: none;
     margin-left: 42px;
     margin-top: 5px ;
