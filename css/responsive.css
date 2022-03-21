@@ -1,6 +1,6 @@
 
 /* Tablette */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
     h1.section-titre {
         font-size: 6rem;
     }
@@ -8,7 +8,6 @@
     #intro h1 {
         font-size: 7rem;
     }
-
 
     /* A propos size_____________________________ */
     #Apropos .Apropos {
@@ -140,6 +139,7 @@
     #Apropos .Apropos-bottom .Apropos-item {
         flex-basis: 22%;
         margin: 1.5%;
+        background-color: aqua;
     }
 
 }
@@ -163,9 +163,8 @@
 
     btc{
        visibility: hidden;
-
     }
-  
+
       control {
         z-index: 100;
         position: absolute;
@@ -188,4 +187,11 @@
         animation-timing-function: ease-out;
       }
 
+    #projet .all-projet .projet-info {
+        height: 100%;
+        width: 100%;
+    }
+    #projet .all-projet .projet-img {
+        height: 100%;
+    }
   }

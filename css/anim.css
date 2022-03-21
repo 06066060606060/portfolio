@@ -1,34 +1,24 @@
 @media (prefers-reduced-motion: no-preference) {
- 
   .apropos {
     animation: wipe-enter2 800ms ease-out 1;
-
   }
 
-  .projet-header{
+  .projet-header {
     animation: wipe-enter 1500ms ease-out 1;
     animation-duration: 1500ms;
- 
-
   }
 
   .contact h1 {
-    animation: wipe-enter  1500ms  ease-out 1;
-    animation-duration: 1500ms;
-    margin-bottom: 250px;
-
-    
+    margin-bottom: 200px;
   }
 
   .Description {
-    animation: wipe-enter  800ms  ease-out 1;
+    animation: wipe-enter 800ms ease-out 1;
     animation-duration: 2s;
-
   }
 
-
   @keyframes wipe-enter {
-   0% {
+    0% {
       opacity: 0;
       transform: translateY(50%);
     }
@@ -66,5 +56,4 @@
       transform: translateY(0%);
     }
   }
-  
 }

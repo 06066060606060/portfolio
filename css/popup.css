@@ -24,10 +24,11 @@
   }
 
  #myPopup {
+   
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
     padding-top: 178px;
-    background-image: url(/img/code.png);
+    background-image: url(../img/code.png);
     background-repeat: no-repeat;
     background-size: contain;
    
