@@ -10,6 +10,11 @@
   width: 100%;
 }
 
+.contact h1 {
+  margin-bottom: 200px;
+}
+
+
 #contact .contact-item1 {
   background-color: #ffffff;
   width: 80%;

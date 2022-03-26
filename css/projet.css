@@ -6,20 +6,8 @@
   /* background-color: rgb(0, 255, 0); */
 }
 
-#projet .projet span p {
-  position: absolute;
-  z-index: 90;
-  left: 50%;
-  top: 480%;
-  color: transparent;
-  border-radius: 100%;
-  animation: fleche_bounce 0.8s alternate;
-  -webkit-animation: fleche_bounce 0.8s infinite alternate;
-  animation-timing-function: ease-in;
-}
 #projet .projet-header h1 {
-  margin-top: 40px;
-  margin-bottom: 45px;
+  padding: 20px;
 }
 
 #projet .all-projet {
@@ -68,7 +56,6 @@
   color: aliceblue;
 }
 
-
 #projet .projet-img {
   flex-basis: 50%;
   height: 200px;
@@ -105,7 +92,7 @@
   padding-top: 10px;
 }
 
-#projet li{
+#projet li {
   font-size: 1.2rem;
   margin-top: 5px;
 }
