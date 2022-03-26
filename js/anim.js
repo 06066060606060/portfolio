@@ -2,13 +2,9 @@
 
 const titre = document.querySelector('.apropos');
 const detail = document.querySelector('.Description');
-const projet = document.querySelector('.projet-header');
-const contactx = document.querySelector('.contact');
 
 titre.classList.remove('apropos');
 detail.classList.remove('Description');
-projet.classList.remove('projet-header');
-contactx.classList.remove('contact-items');
 
 // INTERCEPTE A PROPOS
 const observer = new IntersectionObserver(entries => {

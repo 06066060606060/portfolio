@@ -23,37 +23,16 @@ function showSlides() {
 function updateTextInput(val) {
   document.getElementById('textInput').value=val; 
   console.clear();
-  console.log(`%c ________________________________________
-  < _______BIENVENUE DANS LA CONSOLE______ >
-   ----------------------------------------
-          \\   ^__^
-           \\  (oo)\\_______
-              (__)\\       )\\/\\
-                  ||----w |
-                  ||     ||`, "font-family:monospace");
-  console.log("Nombre de points: " + val);
-
 }
 function updateTextInput2(val) {
   document.getElementById('textInput2').value=val; 
   console.clear();
-  console.log(`%c ________________________________________
-  < _______BIENVENUE DANS LA CONSOLE______ >
-   ----------------------------------------
-          \\   ^__^
-           \\  (oo)\\_______
-              (__)\\       )\\/\\
-                  ||----w |
-                  ||     ||`, "font-family:monospace");
-  //console.log("Taille max des lignes: "+ val);
-  
 }
 
 //popup
 function myPopup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
- // console.log("show");
 }
 
 
