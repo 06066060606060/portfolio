@@ -1,5 +1,5 @@
 # portfolio
-portfolio formation simplon 2022  HTML/CSS/JS 
+portfolio formation simplon 2022  HTML/CSS/JS/API 
 https://06066060606060.github.io/portfolio/
 
 
